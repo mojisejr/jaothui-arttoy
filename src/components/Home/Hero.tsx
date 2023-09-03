@@ -3,9 +3,9 @@ import HeroCard from "./HeroCard";
 const Hero = () => {
   return (
     <>
-      <div className="hero bg-base-200 min-h-screen">
+      <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <img className="max-w-md" src="/images/toy1.jpg" alt="image" />
+          <img className="w-full max-w-md" src="/images/toy1.jpg" alt="image" />
           <div className="max-w-md">
             <h1 className="text-5xl font-bold">
               Jaothui ART-<span className="text-primary">TOY</span>
