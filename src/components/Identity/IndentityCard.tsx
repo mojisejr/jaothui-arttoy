@@ -70,7 +70,7 @@ const IdentityCard = () => {
               </div>
             </div>
             <Link
-              href="https://www.bkcscan.com/"
+              href="https://testnet.bkcscan.com/token/0xe2c81a7cD092Fa25f3d1311A2D9F4Df2dd310cB0/inventory"
               className="btn btn-ghost text-gray-400"
             >
               View On BKCScan <HiExternalLink size={20} />
