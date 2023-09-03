@@ -1,11 +1,11 @@
 import Link from "next/link";
-import {
-  FcBiotech,
-  FcNfcSign,
-  FcElectronics,
-  FcPlanner,
-  FcLink,
-} from "react-icons/fc";
+
+import { BiRfid } from "react-icons/bi";
+import { TbNfc } from "react-icons/tb";
+import { MdDateRange } from "react-icons/md";
+import { FaMicrochip } from "react-icons/fa";
+import { HiExternalLink } from "react-icons/hi";
+
 const IdentityCard = () => {
   return (
     <>
@@ -20,52 +20,60 @@ const IdentityCard = () => {
             <img src="/images/toy1.jpg" />
           </figure>
           <div className="card-body">
-            <div className="card-title">information</div>
+            <div className="card-title">Information</div>
             <div className="stats stats-vertical shadow">
-              <div className="stat">
+              <div className="stat flex items-center gap-4">
                 <div className="stat-figure text-secondary">
-                  <FcNfcSign size={30} />
+                  <TbNfc size={30} />
                 </div>
-                <div className="stat-title text-primary">Serial No.</div>
-                <div className="stat-value text-secondary">THUI-00</div>
-                <div className="stat-desc">arttoy{"'"}s Serial number</div>
+                <div>
+                  <div className="stat-title text-primary">Serial No.</div>
+                  <div className="stat-value text-secondary">THUI-00</div>
+                  <div className="stat-desc">arttoy{"'"}s Serial number</div>
+                </div>
               </div>
-              <div className="stat">
+              <div className="stat flex items-center gap-4">
                 <div className="stat-figure text-secondary">
-                  <FcElectronics size={30} />
+                  <FaMicrochip size={30} />
                 </div>
-                <div className="stat-title text-primary">Model No.</div>
-                <div className="stat-title font-bold text-secondary xl:text-[2rem]">
-                  V0-00000000000-000
+                <div>
+                  <div className="stat-title text-primary">Model No.</div>
+                  <div className="stat-title font-bold text-secondary xl:text-[2rem]">
+                    V0-00000000000-000
+                  </div>
+                  <div className="stat-desc">arttoy{"'"}s Model No.</div>
                 </div>
-                <div className="stat-desc">arttoy{"'"}s Model No.</div>
               </div>
-              <div className="stat">
+              <div className="stat flex items-center gap-4 ">
                 <div className="stat-figure text-secondary">
-                  <FcBiotech size={30} />
+                  <BiRfid size={30} />
                 </div>
-                <div className="stat-title text-primary">Signature Id.</div>
-                <div className="stat-title font-bold text-secondary xl:text-[2rem]">
-                  000000000000000
+                <div>
+                  <div className="stat-title text-primary">Signature Id.</div>
+                  <div className="stat-title font-bold text-secondary xl:text-[2rem]">
+                    000000000000000
+                  </div>
+                  <div className="stat-desc">arttoy{"'"}s NFC signature</div>
                 </div>
-                <div className="stat-desc">arttoy{"'"}s NFC signature</div>
               </div>
-              <div className="stat">
+              <div className="stat flex items-center gap-4">
                 <div className="stat-figure text-secondary">
-                  <FcPlanner size={30} />
+                  <MdDateRange size={30} />
                 </div>
-                <div className="stat-title text-primary">Created Date</div>
-                <div className="stat-title font-bold text-secondary xl:text-[2rem]">
-                  Sat 05, 2023
+                <div>
+                  <div className="stat-title text-primary">Created Date</div>
+                  <div className="stat-title font-bold text-secondary xl:text-[2rem]">
+                    Sat 05, 2023
+                  </div>
+                  <div className="stat-desc">arttoy{"'"} creation date</div>
                 </div>
-                <div className="stat-desc">arttoy{"'"} creation date</div>
               </div>
             </div>
             <Link
               href="https://www.bkcscan.com/"
-              className="btn btn-ghost text-base-300"
+              className="btn btn-ghost text-gray-400"
             >
-              View On BKCScan <FcLink size={20} />
+              View On BKCScan <HiExternalLink size={20} />
             </Link>
           </div>
         </div>
